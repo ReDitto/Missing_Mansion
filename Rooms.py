@@ -33,4 +33,3 @@ class loft(room):
         if self.enemy.is_alive():
             player.hp = player.hp - self.enemy.damage
             print("placeholder something about the undefinable ghost attacking you".format(self.enemy.damage, player.hp))
-            #/k;.lkkjkj,kj,kj,kj
