@@ -38,7 +38,7 @@ while(intro):
     break
 
 intro = False
-nurse = nursery(x = 4, y = 4)
+nurse = nursery (y = 1, x = 2)
 nurse.nurserytext()
 
 gamerunning = True
