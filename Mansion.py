@@ -22,6 +22,7 @@ elif playername == "Zorc" or playername == "zorc" or playername == "Zork" or pla
     print("\tYeah, yeah, yeah... I'll start the game now. *ahem*")
 
 intro = True
+
 while(intro):
     time.sleep(5)
     os.system('cls')
@@ -38,7 +39,8 @@ while(intro):
     break
 
 intro = False
-nurse = nursery (y = 1, x = 2)
+
+nurse = nursery (x = 2, y = 5)
 nurse.nurserytext()
 
 gamerunning = True
@@ -49,9 +51,9 @@ while (gamerunning):
         time.sleep(0.75)
         print("You walk to the lamp and puzzle at it for a bit. You've come to the conclusion that, although it isn't ideal, you could use this as defense against danger.")
         time.sleep(1.75)
-        print("\n\t*You take the odd lamp.*")
+        print("\t*You take the odd lamp.*")
         time.sleep(0.75)
-        #placeholder - player.append oddlamp()
+        #placeholder - player.inventory.append(self.oddlamp)
     elif command != action:
         time.sleep(0.75)
         print("\nThat isn't a valid command.")

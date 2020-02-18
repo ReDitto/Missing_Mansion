@@ -7,4 +7,4 @@ class action():
 
     def look (self):
         action.look
-        #look, go, goto, go to.
+        #look, look at, lookat, go, goto, go to.
