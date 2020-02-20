@@ -39,20 +39,33 @@ while(intro):
 
 intro = False
 
-nurse = nursery (x = 2, y = 5)
-nurse.nurserytext()
+nurser = nursery (x = 2, y = 5)
+nurser.nurserytext()
 
-gamerunning = True
-while (gamerunning):
+innursery = True
+while (innursery):
     time.sleep(0.75)
     command = input("\nWhat will you do?\n\t")
-    if command == "look lamp" or command == "look oddlamp":
+    if command == "look lamp" or command == "look oddlamp" or command == "lootat lamp" or command == "lookat oddlamp" or command == "look at lamp" or command == "look at oddlamp" or command == "go lamp" or command == "go oddlamp" or command == "goto lamp" or command == "goto oddlamp" or command == "go to lamp" or command == "go to oddlamp" or command == "check lamp" or command == "check oddlamp":
         time.sleep(0.75)
-        print("You walk to the lamp and puzzle at it for a bit. You've come to the conclusion that, although it isn't ideal, you could use this as defense against danger.")
+        print("You walk to the lamp and puzzle at it for a bit. You've come to the conclusion that, although it isn't ideal to carry around everywhere, it could be very resourceful.")
         time.sleep(1.75)
         print("\t*You take the odd lamp.*")
         time.sleep(0.75)
-        #placeholder - player.inventory.append(self.oddlamp)
+        #placeholder - player.inventory append(self.oddlamp)
+
+
     elif command != action:
         time.sleep(0.75)
         print("\nThat isn't a valid command.")
+
+innursery = False
+
+lof = loft (x = 2, y = 3 & 4)
+lof.lofttest()
+
+inloft = True
+while (inloft):
+    time.sleep(0.75)
+    command = input("\nWhat will you do?\n\t")
+    #if command ==
