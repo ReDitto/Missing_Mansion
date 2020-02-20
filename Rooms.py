@@ -1,6 +1,6 @@
 import time
-from Objects import things
-from Enemies import enemy
+from Things import *
+
 
 class room:
     def __init__ (self, x, y):

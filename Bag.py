@@ -1,8 +1,16 @@
-class inventory():
-    def __init__ (self):
-        inventory.__init__ (self)
+from Rooms import *
+from Actions import *
 
-    if 0 == 0:
-        print("")#placeholder
-    else:
-        (print("Your bag is empty"))
+class player():
+    def __init__ (self):
+        self.inventory = []
+        self.hp = 75
+        self.location_x, self.location_y, room.nursery
+        self.victory = False
+
+    def alive(self):
+        return self.hp > 0
+
+    def printbag(self):
+        for item in self.bag:
+            print(item, '\n')

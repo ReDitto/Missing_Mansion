@@ -3,8 +3,7 @@ import os
 from Actions import *
 from Bag import *
 from Rooms import *
-from Objects import *
-from Enemies import *
+from Things import *
 
 print("\n\t\t  THE MISSING MANSION")
 time.sleep(1.5)
@@ -47,7 +46,7 @@ gamerunning = True
 while (gamerunning):
     time.sleep(0.75)
     command = input("\nWhat will you do?\n\t")
-    if command == "look lamp" or command == "look oddlamp" or command == "go lamp" or command == "goto lamp" or command == "go to lamp" or command == "go oddlamp" or command == "goto oddlamp" or command == "go to oddlamp":
+    if command == "look lamp" or command == "look oddlamp":
         time.sleep(0.75)
         print("You walk to the lamp and puzzle at it for a bit. You've come to the conclusion that, although it isn't ideal, you could use this as defense against danger.")
         time.sleep(1.75)

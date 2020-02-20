@@ -1,3 +1,5 @@
+from Bag import *
+
 class action():
     def __init__ (self):
         action.__init__ (self)
@@ -7,4 +9,4 @@ class action():
 
     def look (self):
         action.look
-        #look, look at, lookat, go, goto, go to.
+        #look, look at, lookat, go, goto, go to, check.
