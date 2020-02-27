@@ -53,9 +53,11 @@ while (innursery):
         print("\t*You take the odd lamp.*")
         time.sleep(0.75)
         #placeholder - player.inventory append(self.oddlamp)
-    elif command == action:
-        print(action)
-    elif command != action:
+    elif command == lookaction:
+        print(lookaction)
+    elif command == attackaction:
+        print("You take a swing at the enemy, but then you realise there isn't an enemy. However, you've successfully won an encounter against the air.")
+    elif command != lookaction or command != attackaction or command != inventoryopen:
         time.sleep(0.75)
         print("\nThat isn't a valid command.")
 
