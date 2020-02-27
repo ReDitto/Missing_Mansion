@@ -1,12 +1,24 @@
 from Bag import *
 from Rooms import *
 
-class action():
-    def __init__ (self):
-
-        def look(self):
-            action.look
-        #look, look at, lookat, go, goto, go to, check.
+action = {
+    "look"
+    "lookat"
+    "look at"
+    "go"
+    "goto"
+    "go to"
+    "check"
+    "open"
+    "attack"
+    "hit"
+    "bag": "In your bag, you have:{}",
+    "openbag": "In your bag, you have:{}",
+    "open bag": "In your bag, you have:{}",
+    "checkbag": "In your bag, you have:{}",
+    "check bag": "In your bag, you have:{}",
+    "inventory": "In your bag, you have:{}"
+}
 
 class player():
     def __init__ (self):

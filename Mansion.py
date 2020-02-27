@@ -26,15 +26,15 @@ while(intro):
     time.sleep(5)
     os.system('cls')
     time.sleep(1.75)
-    print("\nYou wake up from your long and dazed trance. You're not sure how long you've been out cold. After taking a second to grasp your surroundings, you look around to see where you were.")
+    print("\nYou wake up from your long and dazed trance. You're not sure how long you've been out cold. After taking a second to grasp your envoirnment, you look around to see where you were.")
     time.sleep(2.75)
-    print("After your breif observation, the room looks all too familiar. After a moment of thought, it's clear that you've finally found it: The Missing Quinelly Mansion.")
+    print("After a breif observation of your surroundings, the room looks all too familiar. After a moment of thought, it's clear that you've finally found it: The Missing Quinelly Mansion.")
     time.sleep(2.75)
     print("You have somehow ended up in the nurserey. On the bright side, months and almost years of research and investigation have finally paid off. It has been found at last!")
     time.sleep(2.75)
     print("Unfortunatley, you're only present with the clothes on your back, and without proper equipment to record findings of any sort.")
     time.sleep(2.75)
-    print("You must get out as quickly as possible, lest your name be added to the disappearances the home is infamous for.")
+    print("You must get out as quickly as possible so you may return to do proper research, lest your name be added to the disappearances the home is infamous for.")
     break
 
 intro = False
@@ -53,8 +53,8 @@ while (innursery):
         print("\t*You take the odd lamp.*")
         time.sleep(0.75)
         #placeholder - player.inventory append(self.oddlamp)
-
-
+    elif command == action:
+        print(action)
     elif command != action:
         time.sleep(0.75)
         print("\nThat isn't a valid command.")
@@ -62,7 +62,7 @@ while (innursery):
 innursery = False
 
 lof = loft (x = 2, y = 3 & 4)
-lof.lofttest()
+lof.lofttext()
 
 inloft = True
 while (inloft):
