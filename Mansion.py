@@ -5,6 +5,8 @@ from Bag import *
 from Rooms import *
 from Things import *
 
+intro = True
+
 print("\n\t\t  THE MISSING MANSION")
 time.sleep(1.5)
 playername = input("\n\n\n\n\t\tENTER YOUR NAME TO BEGIN\n\n\t")
@@ -20,7 +22,7 @@ elif playername == "Zorc" or playername == "zorc" or playername == "Zork" or pla
     time.sleep(1.75)
     print("\tYeah, yeah, yeah... I'll start the game now. *ahem*")
 
-intro = True
+gamerunning = True
 
 while(intro):
     time.sleep(5)
@@ -39,35 +41,44 @@ while(intro):
 
 intro = False
 
-nurser = nursery (x = 2, y = 5)
-nurser.nurserytext()
-
-innursery = True
-while (innursery):
+while (gamerunning):
     time.sleep(0.75)
     command = input("\nWhat will you do?\n\t")
-    if command == "look lamp" or command == "look oddlamp" or command == "lootat lamp" or command == "lookat oddlamp" or command == "look at lamp" or command == "look at oddlamp" or command == "go lamp" or command == "go oddlamp" or command == "goto lamp" or command == "goto oddlamp" or command == "go to lamp" or command == "go to oddlamp" or command == "check lamp" or command == "check oddlamp":
-        time.sleep(0.75)
-        print("You walk to the lamp and puzzle at it for a bit. You've come to the conclusion that, although it isn't ideal to carry around everywhere, it could be very resourceful.")
-        time.sleep(1.75)
-        print("\t*You take the odd lamp.*")
-        time.sleep(0.75)
-        #placeholder - player.inventory append(self.oddlamp)
-    elif command == lookaction:
+    if command == lookaction:
         print(lookaction)
-    elif command == attackaction:
+    elif command == attackaction():
         print("You take a swing at the enemy, but then you realise there isn't an enemy. However, you've successfully won an encounter against the air.")
     elif command != lookaction or command != attackaction or command != inventoryopen:
         time.sleep(0.75)
         print("\nThat isn't a valid command.")
 
-innursery = False
+    nurser = nursery (x = 2, y = 5)
+    nurser.nurserytext()
 
-lof = loft (x = 2, y = 3 & 4)
-lof.lofttext()
+    innursery = True
+    while (innursery):
+        time.sleep(0.75)
+        command = input("\nWhat will you do?\n\t")
+        if command == "look lamp" or command == "look oddlamp" or command == "lootat lamp" or command == "lookat oddlamp" or command == "look at lamp" or command == "look at oddlamp" or command == "go lamp" or command == "go oddlamp" or command == "goto lamp" or command == "goto oddlamp" or command == "go to lamp" or command == "go to oddlamp" or command == "check lamp" or command == "check oddlamp":
+            time.sleep(0.75)
+            print("You walk to the lamp and puzzle at it for a bit. You've come to the conclusion that, although it isn't ideal to carry around everywhere, it could be very resourceful.")
+            time.sleep(1.75)
+            print("\t*You take the odd lamp.*")
+            time.sleep(0.75)
+            #placeholder - player.inventory append(self.oddlamp)
+        elif command == lookaction:
+            print(lookaction)
+        elif command == attackaction:
+            print("You take a swing at the enemy, but then you realise there isn't an enemy. However, you've successfully won an encounter against the air.")
+        elif command != lookaction or command != attackaction or command != inventoryopen:
+            time.sleep(0.75)
+            print("\nThat isn't a valid command.")
 
-inloft = True
-while (inloft):
-    time.sleep(0.75)
-    command = input("\nWhat will you do?\n\t")
-    #if command ==
+    innursery = False
+
+    lof = loft (x = 2, y = 3 & 4)
+    lof.lofttext()
+
+    inloft = True
+    while (inloft):
+        print("")

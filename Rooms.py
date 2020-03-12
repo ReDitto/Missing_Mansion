@@ -23,6 +23,8 @@ class nursery(room):
         print("\t- A small bookshelf with only two books")
         time.sleep(1.75)
         print("\t- And a myriad of different colored socks scattered across the floor.")
+        self.x = 2
+        self.y = 5
     def modplayer(self, player):
         pass
 
