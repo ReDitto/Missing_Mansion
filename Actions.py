@@ -5,11 +5,7 @@ lookaction = {
     "look"
     "lookat"
     "look at"
-    "go"
-    "goto"
-    "go to"
     "check"
-    "open"
 }
 
 attackaction = {
@@ -32,11 +28,17 @@ attackaction = {
     "beat up"
     "besiege"
     "pounce"
-    "cast fist"
+    "cast fist at"
 }
 
 moveaction = {
-    ""
+    "move"
+    "moveto"
+    "move to"
+    "go"
+    "goto"
+    "go to"
+    "open"
 }
 
 inventoryopen = {

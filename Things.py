@@ -6,7 +6,7 @@ class objects():
         def __str__ (self):
             return "{}\n".format(self.name, self.description)
 
-        class weapon(things):
+        class weapon(objects):
             def __init__ (self, name, desc, damage):
                 self.damage = damage
                 super().__init__(name, desc)
